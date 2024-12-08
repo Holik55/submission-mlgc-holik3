@@ -5,7 +5,7 @@ steps:
       [
         "build",
         "-t",
-        "asia-southeast2-docker.pkg.dev/submissionmlgc-rizal-444004/ayamgeprek/asclepius",
+        "asia-southeast2-docker.pkg.dev/submissionmlgc-mohholik-444104/ayam-sayur/asclepius",
         ".",
       ]
 
@@ -14,7 +14,7 @@ steps:
     args:
       [
         "push",
-        "asia-southeast2-docker.pkg.dev/submissionmlgc-rizal-444004/ayamgeprek/asclepius",
+        "asia-southeast2-docker.pkg.dev/submissionmlgc-mohholik-444104/ayam-sayur/asclepius",
       ]
 
   # Step 3: Deploy the image to Cloud Run
@@ -25,7 +25,7 @@ steps:
       - "deploy"
       - "asclepius"
       - "--image"
-      - "asia-southeast2-docker.pkg.dev/submissionmlgc-rizal-444004/ayamgeprek/asclepius"
+      - "asia-southeast2-docker.pkg.dev/submissionmlgc-mohholik-444104/ayam-sayur/asclepius"
       - "--platform"
       - "managed"
       - "--region"
@@ -34,4 +34,4 @@ steps:
 options:
   logging: CLOUD_LOGGING_ONLY
 images:
-  - "asia-southeast2-docker.pkg.dev/submissionmlgc-rizal-444004/ayamgeprek/asclepius"
+  - "asia-southeast2-docker.pkg.dev/submissionmlgc-mohholik-444104/ayam-sayur/asclepius"
